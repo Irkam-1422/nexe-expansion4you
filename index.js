@@ -1,11 +1,9 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const bcrypt = require('bcryptjs')
-const config = require('config')
 const path = require('path')
 const fileUpload = require('express-fileupload')
 
-const PORT = config.get('port') || 5000
+const PORT = process.env.PORT || 5000
 const db = 'mongodb+srv://expansion4you:xH7Rd6ji1Ya413xm@cluster0.kgapqpo.mongodb.net/'
 
 const app = express()
