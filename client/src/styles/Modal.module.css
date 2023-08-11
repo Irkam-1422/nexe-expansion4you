@@ -1,0 +1,74 @@
+
+.modalOuter {
+    position: absolute;
+    background: #000000c4;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.modalInner {
+    background: #fefefe;
+    border-radius: 5px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 5%;
+}
+
+.text {
+    font-size: 2rem;
+    font-size: 1.2rem;
+    margin: 5%;
+    margin-top: 0;
+}
+
+.firstBtn {
+    margin-bottom: 1px;
+    color: rgb(254, 254, 254);
+    background: #642066ab;
+    border: 1px solid #642066;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 2%;
+    background: transparent;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #642066; 
+}
+
+.btn:hover {
+    background: #eee2ef; 
+}
+
+.firstBtn:hover {
+    background: #642066; 
+}
+
+.editBtn {
+    outline: none;
+    margin: 1%;
+    border: 1px solid;
+    border-radius: 3px;
+    color: #642066;
+    background: #6420663b;
+    width: 20%;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+.deleteBtn {
+    color: #64206675;
+    background: #fefefe;
+}

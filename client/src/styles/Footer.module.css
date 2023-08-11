@@ -1,0 +1,158 @@
+.footerCont {
+    background: #fefefe;
+    color: #000;
+    display: flex;
+    position: relative;
+    top: 40vh;
+    padding: 5vh 5vw;
+    padding-bottom: 18vh;
+    justify-content: space-around; 
+
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fefefede;
+
+    display: none;
+    z-index: -1;
+    margin-top: -3vh;
+}
+
+.textAndLogo {
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    background-image: url('../assets/logo.png');
+    width: 20vw;
+    height: 12.9vw;
+    background-size: contain;
+}
+
+.text {
+    text-align: initial; 
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5vh;
+}
+
+.h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2.5vh;
+}
+
+.linkedIn {
+    background-image: url('../assets/linkedIn.png');
+    width: 4vw;
+    height: 4vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.twitter {
+    background-image: url('../assets/twitter.png');
+    width: 4vw;
+    height: 3.765vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.facebook {
+    background-image: url('../assets/facebook.png');
+    width: 4vw;
+    height: 3.8vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 1vh;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #642066; 
+    background: transparent;     
+}
+
+.input::placeholder {
+    color: #642066;
+}
+
+.submit {
+    outline: none;
+    background: #642066;
+    border: none;
+    border-radius: 5px;
+    color: #fefefe;
+    padding: 0.5vw;
+    font-size: 1.5vw;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.navbtn {
+    color: #000;
+}
+
+.navbtn:hover {
+    color: #8f2e92;
+    cursor: pointer;
+}
+
+@media (orientation: portrait) {
+    .footerCont {
+        bottom: 0;
+        flex-direction: column;
+        top: auto;
+    }
+    .textAndLogo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .logo {
+        width: 30%;
+        height: 17vh;
+        background-repeat: no-repeat; 
+        width: 44%;
+    }
+    .text {
+        font-size: 2.5rem;
+        text-align: end;
+        margin-left: 5%;
+        width: 30%;
+        width: 64%;
+    }
+    .linksAndContact {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .cont {
+        font-size: 2.7rem;
+    }
+    .links {
+        margin-left: 2%;
+    }
+    .contacts {
+        margin-left: 15%;
+    }
+    .h1 {
+        font-size: 3.5rem;
+    }
+    .submit {
+        font-size: 3.5rem;
+    }
+}

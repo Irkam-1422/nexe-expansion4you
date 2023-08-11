@@ -1,0 +1,135 @@
+.navCont {
+    position: fixed;
+    top: 0;
+    z-index: 999999999999;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4vh;
+    padding: 4vh 4vw;
+    padding-left: 42vw;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    position: fixed;
+    top: 0;
+    background: #fefefe;
+    padding: 0;
+    z-index: 1000;
+    animation: fadeIn 2s linear;
+    width: 100vw;
+    transition: all 1s;
+}
+
+.btnCont {
+    margin-top: 3.6vw;
+    display: flex;
+    flex-direction: column;
+    animation: slideDown 1s;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.navBtn {
+    text-transform: uppercase;
+    padding: 7px 17px;
+    transition: all 1s;
+    cursor: pointer;
+    color: black;
+    opacity: 1;
+    transition: all 1s;
+    /* animation: fadeIn 2s linear 0s; */
+}
+
+.navBtn:hover {
+    background: linear-gradient(45deg, #ca33cf, #61dafb);
+        color: #fefefe; 
+    /* border-bottom: 1px solid; */
+}
+
+.hover {
+    background: linear-gradient(45deg, #ca33cf, #61dafb);
+        color: #fefefe; 
+}
+
+.on {
+    background: #642067; 
+    color: #fefefe;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0.5vw;
+    animation: none;
+    transition: all .5s;
+}
+
+.on:hover {
+    background: black;
+}
+
+.onBtn:hover {
+    background: black;
+}
+
+.x {
+    display: none;
+}
+._ {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { max-height: 0; }
+    100% { max-height: fit-content; }
+}
+
+@media (orientation: portrait) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 4.5rem;
+        padding: 17% 0; 
+        height: 100vh;
+        justify-content: flex-start;
+    }
+    .x {
+        display: block;
+        position: absolute;
+        top: -2%;
+        right: 6%;
+        transform: scaleX(1.5);
+        font-size: 7rem; 
+    }
+    .x:hover {
+        background: #fefefe;
+    }
+    ._ {
+        display: block;
+        position: absolute;
+        bottom: -2%;
+        right: 6%;
+        /* top: 25%;
+        left: 26%; */
+        line-height: .5;
+        transform: scaleX(3.5);
+        font-size: 4rem;
+        font-weight: 600;
+        color: rgb(0,0,0);
+    }
+    ._:hover {
+        background: #fefefe;
+    }
+    .navBtn {
+        padding: 6% 0;
+    }
+    .navBtn:hover {
+        background: linear-gradient(45deg, #ca33cf, #61dafb);
+        color: #fefefe; 
+    }
+}

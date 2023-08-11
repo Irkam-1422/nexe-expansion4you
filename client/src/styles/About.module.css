@@ -1,0 +1,327 @@
+.aboutCont {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    position: absolute;
+    /* z-index: 2; */
+    z-index: 5;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.aboutFlex1 {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+    font-size: 6vw;
+    padding-left: 8vw;
+    background: #fefefe;
+    color: black;
+    transition: all 1s;
+}
+
+.aboutFlex2 {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #642066;
+    padding-bottom: 7vh;
+    font-size: 1.6vw;
+    transition: all 1s;
+}
+
+.numsCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.num {
+    font-size: 9vw;
+    line-height: 1;
+    margin-top: 6vh;
+}
+
+.lastNum {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+}
+
+.lable {
+    font-weight: 300;
+}
+
+.thinner {
+    font-weight: 300;
+    position: relative;
+    top: -1vh;
+    font-size: 3vw;
+}
+
+.hr {
+    width: 80%;
+    border: 3px solid #642066;
+    color: #642066;
+    margin-left: 0;
+}
+
+.span {
+    color: #642066;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-bottom: 0%;
+    padding: 3%;
+    transition: all 2s;
+    background: #000000;
+    transform: rotate(90deg) translate(26%);
+}
+
+.h1 {
+    font-size: 6rem;
+    transform: rotate(-90deg);
+    background: linear-gradient(45deg, #de30e4, #3cfaff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    transition: all 1s;
+    flex: 40%; 
+
+    background: linear-gradient(45deg, #000, #000, #000, #de30e4, #3cfaff);
+    background-size: 300%;
+    background-position-x: left;
+}
+
+.stepBorder{
+    background: linear-gradient(45deg, #de30e4, #61dafb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5%; 
+    margin: 2%;
+}
+
+.stepCont{
+    background: #000;
+    padding: 5%; 
+}
+
+.stepTitle{
+    font-size: 1.8rem;
+                margin-top: 0;
+            background: linear-gradient(45deg, #de30e4, #3cfaff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stepText{
+    font-size: 1.4rem; 
+}
+
+.rotateCont0 {
+    transform: rotate(90deg) translate(26%);
+    transform: rotate(90deg) translate(30%);
+}
+.rotateCont1 {
+    transform: rotate(-90deg) translate(-20%);
+    transform: rotate(-90deg) translate(-15%);
+}
+.rotateCont2 {
+    transform: rotate(90deg) translate(13%);
+    transform: rotate(90deg) translate(-3%);
+}
+.rotateCont3 {
+    transform: rotate(-90deg) translate(-6%);
+    transform: rotate(-90deg) translate(18%)
+}
+.transformNone {
+    transform: none;
+}
+
+.h1_2 {
+    background: linear-gradient(45deg,transparent, transparent, transparent, #de30e4, #5dcbf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: none;
+    text-align: end;
+    padding: 10% 5%;
+    font-size: 6rem;
+    background-size: 300%;
+    background-position-x: left;
+    transition: all 1s;
+}
+
+.text1 {
+    width: 48%;
+    padding: 5%;
+    padding-left: 8%;
+    margin-top: -14%;
+    text-align: initial; 
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.text2 {
+    font-weight: 600;
+    text-align: end;
+    padding: 5%;
+    margin-top: -11%;
+    padding-right: 6%;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.underline {
+    background-repeat: no-repeat;
+    background-position: center bottom 1px;
+    background-size: 250% 2px;
+    background-image: linear-gradient(to right, transparent, transparent, #ca33cf, #61dafb);
+    transition: all 1s;
+    background-position-x: left;
+}
+
+.founderCont {
+    background: #fefefe;
+    display: flex;
+    padding: 5%;
+    align-items: flex-start;
+    padding-left: 8%;
+    padding-right: 3%;
+    transition: all 1s;
+}
+
+.founder {
+    flex: 50%;
+    border: 6px solid #000; 
+    transition: all 1s;
+}
+
+.foundertextBorder {
+    background: linear-gradient(45deg, #de30e4, #3cfaff);
+    flex: 50%;
+    position: relative;
+    left: -7vw;
+    top: 3vh;
+    transition: all 1s;
+}
+
+.founderText {
+    background: #000;
+    color: #fefefe;
+    padding: 5%;
+    font-size: 1.5rem;
+    position: relative;
+    left: 5%;
+    top: 2.5vh; 
+}
+.btnsCont {
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    z-index: 1;
+    position: relative;
+}
+.btn {
+    border: none;
+    outline: none;
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5%;
+    transition: all 1s;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(0, 0, 0),rgb(0, 0, 0), #ca33cf, #61dafb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    background-position-x: right; 
+}
+
+.btn:hover {
+    background-position-x: initial; 
+}
+
+@media (orientation: portrait) {
+    .cont {
+        flex-direction: column;
+        transform: none;
+    }
+    .h1 {
+        transform: none; 
+    }
+    .h1_2 {
+        font-size: 9rem;
+    }
+    .text1 {
+        width: 48%;
+        padding: 5%;
+        padding-left: 8%;
+        margin-top: -14%;
+        text-align: initial;
+        font-size: 2.5rem;
+        color: #000;
+    }
+    .text2 {
+        font-weight: 600;
+        text-align: end;
+        padding: 5%;
+        margin-top: -11%;
+        padding-right: 6%;
+        font-size: 2.5rem;
+        color: #000;
+    }
+    .stepTitle {
+        font-size: 3rem; 
+    }
+    .stepText {
+        font-size: 2.5rem;
+    }
+    .founderCont {
+        flex-direction: column; 
+    }
+    .founder {
+        flex: 50% 1;
+        border: 6px solid #000;
+        transition: all 1s;
+        max-width: 55%;
+    }
+    .foundertextBorder {
+        top: -3vh;
+        left: 27vw;
+        max-width: 65%;
+    }
+    .founderText {
+        background: #000;
+        color: #fefefe;
+        padding: 5%;
+        font-size: 2.5rem;
+        position: relative;
+        left: 5%;
+        top: 1.5vh;
+    }
+    .btnsCont {
+        top: 10%;
+        right: 3.5%; 
+    }
+    .btn {
+        font-size: 2.5rem;
+    }
+}
